@@ -1,0 +1,135 @@
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle, rgb(26, 25, 25) 0%, rgba(31,29,30,1) 100%);
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../img/1347726.png);
+        background-size: cover;
+        background-position: center;
+        z-index: -1; 
+        filter: grayscale(0.5);
+    } 
+}
+
+ .header-bottom {
+        display: inline-flex;  
+        position: fixed;
+        justify-content: center;
+        height: 100vh;
+        width: 5%;
+        right: 0;
+        border-radius: 20px 0px 0px 20px;
+        z-index: 1;
+        background: #4f4f4f;
+        color: black;
+        font-size: 3.5rem;
+
+        &:hover{
+            width: 10%;
+
+            & > .button{
+                & > h1{
+                    display: flex;
+                    position: relative;
+                    font-size: 20px;
+                    writing-mode: horizontal-tb;
+                    border-bottom: 2px solid black;
+                    height: 9vh;
+                }
+
+               & > a > button{
+                visibility: visible;
+
+               }
+            }
+        }
+                & > .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    flex-direction: column;
+                    margin-left: 3px;
+
+                    & > h1{
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        writing-mode:vertical-rl;
+                        flex-direction: column;
+                        font-weight: 900;
+                        font-size: 3.5rem;
+                    }
+
+                    & > a {
+                        text-decoration: none;
+
+                        & > button{
+                            display: flex;
+                            border: none;
+                            color: black;
+                            font-family: "Playwrite DE VA", cursive;
+                            font-size: 15px;
+                            font-weight: 600;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 3px;
+                            visibility: hidden;
+                            background-color: transparent;
+
+                            &:hover{
+                                transform: scale(1.1);
+                                background-color: rgba(128, 128, 128, 0.418);
+                                box-shadow: 1px 1px 10px rgb(133, 131, 131), -1px -1px 10px rgb(133, 131, 131);
+                            }
+                        }
+                }
+        }
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    
+    & > h4{
+        color: rgb(216, 216, 216);
+        font-weight: 900;
+        font-family: "Playwrite DE VA", cursive;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    
+    & > h1{
+        font-weight: 900;
+        font-family: "Permanent Marker", cursive;
+        font-style: normal;
+        letter-spacing: 8px;
+        font-size: 4rem;
+        color: rgb(169, 168, 168);
+        text-shadow: 1px 1px rgb(110, 110, 109);        
+        }
+        
+    & > p{
+        color: rgb(216, 216, 216);
+        word-spacing: 5px;
+        text-align: center;
+        font-weight: 900;
+        font-family: "Playwrite DE VA", cursive;
+        font-size: 1.1rem;
+    }
+}
+    
