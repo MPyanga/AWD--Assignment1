@@ -1,4 +1,4 @@
-//var name = prompt("Enter your name below");
+var name = prompt("Enter your name below");
 name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 document.getElementById('pop-up').innerHTML="Hi "+name+"!";
 
@@ -38,7 +38,7 @@ const output = document.getElementById('output');
     }
     else{
         output.innerHTML = ''; 
-        
+        document.getElementById('input').value = "";
             for (let i = 0; i < parseInt(input); i++) {
             const newIcon = document.createElement('i');
             newIcon.className = 'fa-solid fa-basketball'; 

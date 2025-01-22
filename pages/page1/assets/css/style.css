@@ -207,7 +207,7 @@ body{
     flex-direction: row;
     height: 100vh;
     width: 100%;
-    background-color: green;
+    background: radial-gradient(circle, rgb(20, 20, 20) 0%, rgb(39, 37, 37) 100%);
 
     & > .left{
         display: flex; 
@@ -216,6 +216,13 @@ body{
         align-items: center;
         width: 30%;
         gap: 2rem;
+
+        & > h2{
+            font-weight: 900;
+            padding-bottom: 30px;
+            font-size: 3rem;
+            color: red;
+        }
 
         & > i{
             color: orange;
@@ -229,14 +236,16 @@ body{
             align-items: center;
             background-color: transparent;
             border-radius: 20px;
-            border: 2px solid wheat;
-            color: aliceblue;  
-            padding: 10px;
+            border: 3px solid yellow;
+            color: yellow;
+            padding: 7px;
+            width: 10rem;
 
             
             &::placeholder{
                 text-align: center;
-                color: whitesmoke;
+                color: gray;
+                font-weight: 700;
             }
         }
 
@@ -246,10 +255,17 @@ body{
             border-radius: 10px;
             padding: 10px;
             width: 7rem;
+            height: 2.5rem;
             font-weight: 800;
             color: yellow;
             justify-content: center;
+            align-items: center;
             background-color: red;
+
+            &:hover{
+                transition: 0.4s ease;
+                background-color: green ;
+            }
         }
     }
 
@@ -262,6 +278,8 @@ body{
         justify-content: center;
         align-items: center;
         font-size: 2rem;
+        border-left: 3px dashed yellow;
+        padding: 20px;
 
      & > #output{
         display: flex;
@@ -272,6 +290,7 @@ body{
         gap: 2rem;
         flex-wrap: wrap;
         color: red;
+        padding: 20px;
      }
         
     }
