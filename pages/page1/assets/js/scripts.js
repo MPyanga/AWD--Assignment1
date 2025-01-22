@@ -30,7 +30,7 @@ const input = document.getElementById('input').value;
 const output = document.getElementById('output');
 
     if (input > 100){
-        alert('You\'ve reached the maximum limit');
+        alert('You have reached the allowed maximum');
     }
     else if (input <= 0){
         alert('invalid input');
